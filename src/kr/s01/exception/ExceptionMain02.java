@@ -1,0 +1,26 @@
+package kr.s01.exception;
+
+public class ExceptionMain02 {
+	public static void main(String[] args) {
+		//예외처리
+
+		int[] array = {10,20,30};
+		for(int i=0;i<=array.length;i++) { //'=' 를 넣으면 예외발생 '=' 를 넣지않으면 예외발생하지않음
+			//예외처리
+			//예외가 발생해도 정상 종료될 수 있도록 프로그램적으로 처리하는 것을 말함
+			try {
+				//예외가 발생할 가능성이 있는 코드를 명시
+				//만약 예외가 발생하면 예외가 발생한 코드의 실행을 멈추고 catch 블럭으로 이동
+				System.out.println("array["+i+"]:" + array[i]);
+				//예외 발생시 생성되는 예외 객체의 타입 (catch() 괄호안에 명시) 
+				//~~~Exception e 의 e는 참조변수(예외객체를 받는 것) Exception 까지는 자료형을 의미 
+			}catch(ArrayIndexOutOfBoundsException e) {
+				//예외가 발생하면 catch블럭으로 이동해서 예외가 발생한 이유를 설명하거나 대체코드를 작성
+				System.out.println("없는 인덱스 호출!!");
+			}
+		}
+		
+		System.out.println("프로그램 끝!!");
+		
+	}
+}
