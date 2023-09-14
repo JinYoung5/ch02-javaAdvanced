@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class ExceptionMain04 {
 	
-	public void printData() throws IOException{
+	public void printData() throws IOException,NumberFormatException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("단 입력:");
 		int dan = Integer.parseInt(br.readLine());
@@ -23,6 +23,8 @@ public class ExceptionMain04 {
 			ex.printData();
 		}catch(IOException e) {
 			System.out.println("입력시 오류 발생");
+		}catch(NumberFormatException e) {
+			System.out.println("숫자가 아닙니다");
 		}
 	}
 }
