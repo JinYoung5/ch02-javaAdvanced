@@ -16,6 +16,7 @@ public class ExceptionMain04 {
 			System.out.println(dan + "*" + i + "=" + dan*i);
 		}
 	}
+	
 	public static void main(String[] args) {
 		ExceptionMain04 ex = new ExceptionMain04();
 		try {
