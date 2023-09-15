@@ -12,8 +12,9 @@ public class ArrayListMain08 {
 		//ArrayList의 요소를 반복문을 이용해서 출력
 		System.out.printf("%s %8s %8s%n",	"상품코드","수량","가격 ");
 		System.out.println("-------------------------------");
+		
 		for(CartItem item : list) {
-			System.out.printf("%s %8s %d", item.getCode(),item.getNum(),item.getPrice());
+			System.out.printf("%s %,9d %9d원%n", item.getCode(),item.getNum(),item.getPrice());
 		}
 		
 	}
