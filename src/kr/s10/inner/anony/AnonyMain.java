@@ -9,7 +9,7 @@ class Inner6{
 public class AnonyMain {
 	public void make() {
 		//익명내부클래스
-		Inner6 i = new Inner6() {
+		Inner6 i = new Inner6() { //new 소괄호 하고 중괄호가 나오면 익명 내부클래스다
 
 			@Override
 			public void disp() {
