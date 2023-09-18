@@ -16,7 +16,7 @@ public class ArrayListMain06 {
 		int index1 = list.indexOf("사과");
 		System.out.println("첫번째 사과 : " + index1);
 		
-		int index2 = list.indexOf("사과");
+		int index2 = list.lastIndexOf("사과");
 		System.out.println("마지막 사과 : " + index2);
 		
 		int index3 = list.indexOf("망고");
